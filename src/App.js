@@ -1,7 +1,7 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomeView from './views/HomeView'
-import Sub from './views/Sub'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeView from "./views/HomeView";
+import Sub from "./views/Sub";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
         <Route path="/Sub" element={<Sub />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
