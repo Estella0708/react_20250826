@@ -1,0 +1,102 @@
+#site {
+  .site_inner {
+    padding: 16px;
+
+    .site_title {
+      position: sticky;
+      left: 0;
+      top: 70px;
+      width: 70%;
+      height: auto;
+      font-size: 4vw;
+      font-weight: 700;
+      border-bottom: 0.4vw solid var(--black);
+      margin-bottom: 100px;
+
+      em {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 2;
+      }
+    }
+    .site_wrap {
+      .site_item {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        position: sticky;
+        left: 0;
+
+        &.s1 {
+          background-color: var(--subBg100);
+          top: 180px;
+        }
+        &.s2 {
+          background-color: var(--subBg200);
+          top: 200px;
+        }
+        &.s3 {
+          background-color: var(--subBg300);
+          top: 220px;
+        }
+        &.s4 {
+          background-color: var(--subBg400);
+          top: 240px;
+        }
+
+        .num {
+          position: absolute;
+          left: 1vw;
+          top: 1vw;
+          font-size: 5vw;
+        }
+        .text {
+          margin-bottom: 1rem;
+
+          > div {
+            font-size: 3vw;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-family: var(--mainEng-font);
+            text-decoration: underline;
+            font-weight: 700;
+          }
+        }
+        .title {
+          font-weight: 500;
+          font-family: var(--mainEng-font);
+        }
+        .btn {
+          > a {
+            text-decoration: underline;
+            margin: 0 3px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+
+            &:hover {
+              color: rgb(184, 189, 184);
+            }
+          }
+        }
+        .infor {
+          width: 98%;
+          margin-left: 1%;
+          position: absolute;
+          left: 0;
+          bottom: 3%;
+          display: flex;
+          padding: 0 2%;
+          justify-content: space-between;
+          border-top: 1px solid var(--black100);
+          border-bottom: 1px solid var(--black100);
+
+          > span {
+          }
+        }
+      }
+    }
+  }
+}

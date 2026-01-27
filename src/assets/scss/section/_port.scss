@@ -1,0 +1,103 @@
+#port {
+  padding: 16px;
+
+  .port_inner {
+    .port_title {
+      background-color: lightpink;
+      height: 5vw;
+      font-size: 4vw;
+      font-weight: 700;
+      text-transform: capitalize;
+      border-bottom: 0.4vw solid var(--black100);
+      margin-bottom: 16px;
+
+      em {
+        font-size: 1.25rem;
+        font-weight: 300;
+        vertical-align: 3px;
+      }
+    }
+    .port_wrap {
+      width: 4000px;
+      height: 70vh;
+      display: flex;
+      flex-wrap: wrap;
+      // .port_item의 넓이를 그대로 유지하고 모자라면 아래로 떨어뜨림
+
+      .port_item {
+        width: 500px;
+        padding: 2.5rem;
+        // 2.5 * 16 = 40px
+        margin-right: 20px;
+
+        .num {
+          font-size: 32px;
+          // font-family: var(--mainNum-font);
+        }
+        .img {
+          display: block;
+          margin-top: -20px;
+          transition: all 0.3s;
+          margin-bottom: 5px;
+
+          > img {
+            filter: saturate(0);
+            border-radius: 5px;
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            margin-top: 5px;
+
+            > img {
+              filter: saturate(100%);
+            }
+          }
+        }
+        .title {
+          font-size: 1.5rem;
+          padding: 12px 0;
+          font-weight: 700;
+          text-align: center;
+          font-family: var(--mainEng-font);
+          border-bottom: 3px solid var(--black100);
+        }
+        .desc {
+          text-align: justify;
+          padding: 20px 0;
+        }
+        .btn {
+          display: block;
+          text-align: center;
+          border: 1px solid var(--black100);
+          padding: 10px 0;
+          margin-top: 20px;
+
+          &:hover {
+            background-color: rgba(0,0,0,0.3);
+            color: var(--white);
+          }
+        }
+
+        &.p1 {
+          background-color: var(--subBg100);
+        }
+        &.p2 {
+          background-color: var(--subBg200);
+        }
+        &.p3 {
+          background-color: var(--subBg300);
+        }
+        &.p4 {
+          background-color: var(--subBg400);
+        }
+        &.p5 {
+          background-color: var(--subBg500);
+        }
+        &.p6 {
+          background-color: var(--subBg100);
+        }
+      }
+    }
+  }
+}
