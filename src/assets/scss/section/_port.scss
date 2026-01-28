@@ -3,7 +3,6 @@
 
   .port_inner {
     .port_title {
-      background-color: lightpink;
       height: 5vw;
       font-size: 4vw;
       font-weight: 700;
@@ -74,7 +73,7 @@
           margin-top: 20px;
 
           &:hover {
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             color: var(--white);
           }
         }
